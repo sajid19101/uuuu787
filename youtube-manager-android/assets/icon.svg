@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="#FF0000"/>
+  
+  <!-- Play Button Triangle -->
+  <path d="M205 346.5V165.5L350 256L205 346.5Z" fill="white"/>
+  
+  <!-- Calendar Top Bar -->
+  <rect x="130" y="130" width="250" height="40" rx="8" fill="white"/>
+  
+  <!-- Calendar Icon Bottom -->
+  <rect x="130" y="170" width="250" height="210" rx="8" fill="white" fill-opacity="0.8"/>
+  
+  <!-- Calendar Grid Lines - Horizontal -->
+  <rect x="130" y="220" width="250" height="4" fill="#FF0000"/>
+  <rect x="130" y="270" width="250" height="4" fill="#FF0000"/>
+  <rect x="130" y="320" width="250" height="4" fill="#FF0000"/>
+  
+  <!-- Calendar Grid Lines - Vertical -->
+  <rect x="180" y="170" width="4" height="210" fill="#FF0000"/>
+  <rect x="230" y="170" width="4" height="210" fill="#FF0000"/>
+  <rect x="280" y="170" width="4" height="210" fill="#FF0000"/>
+  <rect x="330" y="170" width="4" height="210" fill="#FF0000"/>
+  
+  <!-- Checkmark for Schedule Completed -->
+  <path d="M358 230L338 248L328 238L320 246L338 264L366 238L358 230Z" fill="#FF0000"/>
+</svg>
