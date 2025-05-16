@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#FFFFFF"/>
+  
+  <!-- Red rectangle (YouTube color) -->
+  <rect x="224" y="300" width="576" height="324" rx="20" fill="#FF0000"/>
+  
+  <!-- Play button triangle -->
+  <path d="M410 463.5V282.5L590 373L410 463.5Z" fill="white" transform="translate(100, 100)"/>
+  
+  <!-- Calendar icon -->
+  <g transform="translate(312, 400)">
+    <!-- Calendar Top Bar -->
+    <rect width="400" height="60" rx="10" fill="white"/>
+    
+    <!-- Calendar Icon Bottom -->
+    <rect y="60" width="400" height="320" rx="10" fill="white" fill-opacity="0.9"/>
+    
+    <!-- Calendar Grid Lines - Horizontal -->
+    <rect y="135" width="400" height="5" fill="#FF0000"/>
+    <rect y="210" width="400" height="5" fill="#FF0000"/>
+    <rect y="285" width="400" height="5" fill="#FF0000"/>
+    
+    <!-- Calendar Grid Lines - Vertical -->
+    <rect x="80" y="60" width="5" height="320" fill="#FF0000"/>
+    <rect x="160" y="60" width="5" height="320" fill="#FF0000"/>
+    <rect x="240" y="60" width="5" height="320" fill="#FF0000"/>
+    <rect x="320" y="60" width="5" height="320" fill="#FF0000"/>
+    
+    <!-- Checkmark for Schedule Completed -->
+    <path d="M300 170L280 190L265 175L250 190L275 215L315 175L300 170Z" fill="#FF0000"/>
+  </g>
+  
+  <!-- App name text -->
+  <text x="512" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#333333">YouTube Schedule Manager</text>
+  <text x="512" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#666666">Offline Edition</text>
+</svg>
