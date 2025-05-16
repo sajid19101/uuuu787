@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base colors */
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  
+  /* YouTube colors */
+  --yt-red: 0 100% 50%;
+  --yt-red-dark: 0 69% 44%;
+  --yt-blue: 214 82% 51%;
+  --yt-success: 142 69% 40%;
+  
+  /* Other UI colors */
+  --primary: 0 100% 50%; /* YouTube red */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  
+  /* YouTube colors in dark mode */
+  --yt-red: 0 100% 60%;
+  --yt-red-dark: 0 69% 54%;
+  --yt-blue: 214 82% 61%;
+  --yt-success: 142 69% 45%;
+  
+  /* Other UI colors */
+  --primary: 0 100% 60%; /* YouTube red */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Add mobile-friendly styles */
+  .app-container {
+    @apply pb-20 md:pb-0 min-h-screen;
+  }
+
+  /* Color utilities */
+  .text-yt-red {
+    @apply text-[hsl(var(--yt-red))];
+  }
+  
+  .bg-yt-red {
+    @apply bg-[hsl(var(--yt-red))];
+  }
+  
+  .text-yt-blue {
+    @apply text-[hsl(var(--yt-blue))];
+  }
+  
+  .bg-yt-blue {
+    @apply bg-[hsl(var(--yt-blue))];
+  }
+  
+  .bg-yt-success {
+    @apply bg-[hsl(var(--yt-success))];
+  }
+
+  /* Material icons alignment fix */
+  .material-icons {
+    @apply inline-flex items-center justify-center;
+    vertical-align: middle;
+  }
+}
